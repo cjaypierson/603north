@@ -6,8 +6,7 @@
 			<div class="account">
 				
 				<?php 
-					session_start();
-					if (isset($_SESSION['email'])) { ?>
+					if ($loggedIn) { ?>
 			        	<a href="logout.php" onclick="return confirm('Are you sure you want to logout?')">Logout</a>
 			    <?php } else { ?>
 			    			<a href="login.php">Login</a>
