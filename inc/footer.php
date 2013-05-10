@@ -6,7 +6,9 @@
 			<div class="account">
 				
 				<?php 
-					if (isset($_SESSION['user'])) { ?>
+					$query = 'SELECT * FROM users WHERE session_id = "' . session_id() . '" LIMIT 1';
+					$userResult = mysql_query($query);
+					if (mysql_num_rows($userResult) == 1){ ?>
 			        	<a href="logout.php" onclick="return confirm('Are you sure you want to logout?')">Logout</a>
 			    <?php } else { ?>
 			    			<a href="login.php">Login</a>
