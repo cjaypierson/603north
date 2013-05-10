@@ -1,9 +1,8 @@
-<?php
-session_start();
+<?php session_start();
 
 // Connect to the DB
 $db_link = mysql_connect('localhost', 'pierson3_cameron', 'Summer9(');
-if (!$db) {
+if (!$db_link) {
 	die("Unable to connect to the database because of " . mysql_error());
 }
 
@@ -25,3 +24,12 @@ if (mysql_num_rows($userResult) == 1){
 		exit();
 	}
 }
+
+
+
+
+
+
+
+
+?>
