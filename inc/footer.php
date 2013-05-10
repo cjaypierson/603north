@@ -6,6 +6,7 @@
 			<div class="account">
 				
 				<?php 
+					session_start();
 					$query = 'SELECT * FROM users WHERE session_id = "' . session_id() . '" LIMIT 1';
 					$userResult = mysql_query($query);
 					if (mysql_num_rows($userResult) == 1){ ?>
