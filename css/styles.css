@@ -1,0 +1,119 @@
+html{
+	height:100%;
+	width:100%;
+}
+body{
+    background:#292929;
+    height:100%;
+    width:100%;
+}
+.navigation{
+	display: block;
+	border: 1px white none;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+}
+.navigation .logo{
+	text-align: center;
+	color: red;
+	padding-top: 5px;
+	padding-bottom: 2px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-right: 1px;
+
+	font-family:'Museo-700', sans-serif;
+	font-size: 2.5em;
+	display: inline-block;
+	height:45px;
+	
+	border-width: 5px;
+	border-style: solid solid double solid;
+	border-color: white;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 15px;
+}
+.navigation .logo a{
+	color:red;
+	text-decoration: none;
+}
+.navigation .logo a #six{
+	color:white;
+}
+.navigation .logo:hover{
+	border-color:red;
+}
+.navigation .navbar{
+	text-align: center;
+	list-style: none;
+	color: white;
+
+
+	font-family:'Museo-700', sans-serif;
+	font-size: 1.25em;
+	display: inline-block;
+	height:37px;
+}
+.navigation .navbar a{
+	color: white;
+	text-decoration: none;
+	padding-top: 15px;
+	padding-bottom: 2px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-left: 6px;
+
+	border-width: 4px;
+	border-style: solid solid double solid;
+	border-color: #292929 #292929 white #292929;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 15px;
+
+
+}
+.navigation .navbar li{
+	text-align: center;
+	display: inline;
+	margin-right: 0px;
+}
+.navigation .navbar a:hover{
+	border-color: white white white white;
+}
+.main{
+	background-color: #999;
+	display:block;
+	height: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 780px;
+	text-align: center;
+	padding: 10px;
+
+	border-width: 5px;
+	border-style: solid solid double solid;
+	border-color: white;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 15px;
+
+}
+.footer{
+	font-family:'Museo-500', sans-serif;
+	font-size: 1em;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+	display: block;
+	text-align: center;
+}
+.account a{
+	float: right;
+	color:white;
+}
