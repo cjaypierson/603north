@@ -6,7 +6,7 @@
 			<div class="account">
 				
 				<?php 
-					if (!isset($loggedIn)) {
+					if (session_id() == '') {
 						session_start();
 					}
 					if (isset($_SESSION['user'])) { ?>
