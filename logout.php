@@ -1,13 +1,11 @@
 <?php
-	require_once('inc/config.php');
-    include(ROOT_PATH . 'inc/header.php');
+require_once('inc/config.php');
+include_once(ROOT_PATH . 'inc/connect.php'); 
 
-	session_start();
-	$_SESSION = array();
-	session_destroy();
-
-	echo '<h2>You have successfully logged out.</h2>';
-
-	include(ROOT_PATH . 'inc/footer.php');
+$query = 'UPDATE users SET session_id = NULL WHERE id = ' . $_SESSION['user']['id'] . ' LIMIT 1';  
+mysql_query($query);  
+unset($_SESSION['user']);  
+header('Location: login.php');  
+exit();
 
 ?>
