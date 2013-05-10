@@ -1,6 +1,6 @@
 <?php
 	require_once('inc/config.php');
-	include(ROOT_PATH . 'inc/protect.php');
+	include(ROOT_PATH . 'inc/connect.php');
 	include(ROOT_PATH . 'inc/header.php');
 ?>
 
