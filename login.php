@@ -99,6 +99,7 @@ if(isset($_POST['registerSubmit']) && $_POST['registerSubmit'] == 'true') {
     $registerPassword = trim($_POST['password']);  
     $registerConfirmPassword = trim($_POST['confirmPassword']);
 
+    $regex = '/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/';
     if (!preg_match($regex, $registerEmail)) {
     	$errors['registerEmail'] = 'Please enter a valid email address'; 
     }
