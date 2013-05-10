@@ -5,8 +5,12 @@
 			?>
 			<div class="account">
 				
-				<?php 
-					session_start();
+				<?php
+					if (!$db_current) { 
+						session_start();
+						db_link = mysql_connect('localhost', 'pierson3_cameron', 'Summer9(');
+						$db_current = mysql_select_db('pierson3_603north', $db_link);	
+					}
 					$query = 'SELECT * FROM users WHERE session_id = "' . session_id() . '" LIMIT 1';
 					$userResult = mysql_query($query);
 					if (mysql_num_rows($userResult) == 1){ ?>
