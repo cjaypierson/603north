@@ -116,4 +116,5 @@ body{
 .account a{
 	float: right;
 	color:white;
+	margin-left: 10px;
 }
