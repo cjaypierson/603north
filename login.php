@@ -84,7 +84,7 @@ if(isset($_POST['loginSubmit']) && $_POST['loginSubmit'] == 'true') {
     		$user = mysql_fetch_assoc($result);
     		$query = 'UPDATE users SET session_id = "' . session_id() . '" WHERE id = ' . $user['id'] . ' LIMIT 1';
     		mysql_query($query);
-    		header('Location: index.php');
+    		header('Location: user_welcome.php');
     		exit();
     	} else {
     		$errors['login'] = "Sorry, your email or password is incorrect.";
