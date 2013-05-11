@@ -3,13 +3,9 @@ require_once('inc/config.php');
 include(ROOT_PATH . 'inc/connect.php');
 include(ROOT_PATH . 'inc/header.php');
 
+print_r($_SESSION['user']);
 
-$query = 'SELECT * FROM users WHERE session_id = "' . session_id() . '" LIMIT 1';
-$email_result = mysql_query($query);
-echo $email_result;
-print_r($email_result);
-
-echo '<h2>Welcome to 603north ' . $email_result['email'] . '</h2>'; 
+echo '<h2>Welcome to 603north ' . $_SESSION['user']['email'] . '</h2>'; 
 
 
 
