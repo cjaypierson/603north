@@ -4,7 +4,7 @@ include(ROOT_PATH . 'inc/connect.php');
 include(ROOT_PATH . 'inc/header.php');
 
 
-$query = 'SELECT * FROM users WHERE session_id = ' . session_id() . '" LIMIT 1';
+$query = 'SELECT * FROM users WHERE session_id = "' . session_id() . '" LIMIT 1';
 $email_result = mysql_query($query);
 echo $email_result;
 print_r($email_result);
