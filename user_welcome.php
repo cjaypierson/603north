@@ -1,16 +1,18 @@
-<?php
-	require_once('inc/config.php');
-	include(ROOT_PATH . 'inc/connect.php');
-	include(ROOT_PATH . 'inc/header.php');
-?>
-
-<h2>Welcome to 603north </h2>
+<?php	
+require_once('inc/config.php');
+include(ROOT_PATH . 'inc/connect.php');
+include(ROOT_PATH . 'inc/header.php');
 
 
+$query = 'SELECT email FROM users WHERE session_id = ' . session_id() . '" LIMIT 1';
+$email_result = mysql_query($query);
+
+echo '<h2>Welcome to 603north ' . $email_result . '</h2>'; 
 
 
 
 
-<?php
-	include(ROOT_PATH . 'inc/footer.php');
+
+
+include(ROOT_PATH . 'inc/footer.php');
 ?>
