@@ -4,7 +4,7 @@
 	include(ROOT_PATH . 'inc/header.php');
 ?>
 
-<h2>Welcome to 603north </h2><?php 
+<h2>Welcome to 603north </h2>
 
 
 
